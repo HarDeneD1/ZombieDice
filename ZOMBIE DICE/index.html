@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="/forrasok/icon.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>Zombie Dice</title>
+</head>
+
+<body>
+    <button id="logobtn"><img src="/forrasok/logo.jpg" id="logo" alt=""></button>
+    <div id="nev">
+        Játékos 1: <input type="text" placeholder="Ide írd az 1. játékos nevét" id="jatekos1"> <br>
+        Játékos 2: <input type="text" placeholder="Ide írd a 2. játékos nevét" id="jatekos2">
+    </div>
+
+    <button id="start"><b>START</b></button><br>
+    <form target="_blank" action="https://www.saseskos.hu/custom/saseskos/image/data/srattached/b1b19c4a0ee49c9db50bdaf817f3226c_zombie_dice_tarsasjatek_jatekszabaly.pdf" ><button id="manual"><b>JÁTÉKSZABÁLYOK</b></button></form>
+
+    <div id="container">
+        <div id="jatekos1adat">
+            <span id="1nev"></span> <br>
+            <span id="pontlbl">Pont:</span>
+            <span id="1pont">0</span>
+        </div>
+        <div id="jatekos2adat">
+            <span id="2nev"></span> <br>
+            <span id="pontlbl">Pont:</span>
+            <span id="2pont">0</span>
+        </div>
+
+
+        <div id="jatek">
+            <table id="kocka">
+                <tr>
+                    <td>
+                        <img id="k1" src="/forrasok/lab1.webp" alt="">
+                    </td>
+                    <td>
+                        <img id="k2" src="/forrasok/lab1.webp" alt="">
+
+                    </td>
+                    <td>
+                        <img id="k3" src="/forrasok/lab1.webp" alt="">
+
+                    </td>
+                </tr>
+            </table>
+            <div id="statisztika">
+                <h4>AKTUÁLIS JÁTÉKOS<br> <span id="aktkiir"></span></h4>
+                <table>
+                    <tr>
+                        <td>
+                            PONT
+                        </td>
+
+                        <td>
+                            <button id="ujra"><b>DOBÁS</b></button>
+                            <button id="megall"><b>MEGÁLLÁS</b></button>
+
+                        </td>
+
+                        <td id="aktsebzes">
+                            ÉLET
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="aktpont">
+                            0
+                        </td>
+                        <td></td>
+                        <td id="aktelet">
+                            3
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
